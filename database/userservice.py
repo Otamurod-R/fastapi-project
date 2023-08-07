@@ -58,7 +58,7 @@ def profile_info_db(user_id):
     return 'No Such User account'
 
 '''chenaging user data'''
-def change_user_data(user_id, change_info, new_data):
+def change_user_data_db(user_id, change_info, new_data):
     db=next(get_db())
 
     exact_user=db.query(User).filter_by(id=user_id).first()

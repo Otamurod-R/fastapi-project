@@ -9,8 +9,7 @@ from api.comments_api import comments
 from api.photo_api import photos
 from api.posts_api import posts
 from api.hashtag_api import hastags
-from api.users_api import *
-
+from api.users_api import users
 
 
 # @app.get('/hello')

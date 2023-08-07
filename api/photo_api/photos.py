@@ -12,7 +12,7 @@ async def get_all_or_exact_photo(photo_id:int=0, user_id:int=0):
 
 
 @app.put('/api/photos')
-async def change_user_photo(photo_id: Body(...), photo_file:UploadFile=Body(...)):
+async def change_user_photo(photo_id:int= Body(...), photo_file:UploadFile=Body(...)):
     if photo_file:
         #keep the photo in the file
         with open(f'{photo_file}.jpg', 'wb') as photo:
